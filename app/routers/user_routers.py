@@ -1,12 +1,9 @@
-from fastapi import APIRouter
 from typing import List
 
-from app.schemas.user_schemas import (
-    StandardOutput,
-    ErrorOutput,
-    UserListOutput,
-)
-from app.views.user_views import UserView
+from fastapi import APIRouter
+
+from app.schemas.user_schemas import ErrorOutput, StandardOutput, UserListOutput
+from app.views.user_view import UserView
 
 user_router = APIRouter(prefix="/user")
 

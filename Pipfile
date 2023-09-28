@@ -6,12 +6,17 @@ name = "pypi"
 [packages]
 fastapi = "*"
 uvicorn = "*"
-sqlalchemy = "*"
 asyncpg = "*"
 alembic = "*"
 blue = "*"
+sqlalchemy = {extras = ["mypy"], version = "*"}
 
 [dev-packages]
 
 [requires]
 python_version = "3.8"
+
+[scripts]
+dev = "uvicorn app.main:app --reload --host 0.0.0.0 --port 8000"
+migrate = "alembic upgrade head"
+downgrade = "alembic downgrade base"

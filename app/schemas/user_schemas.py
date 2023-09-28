@@ -1,5 +1,6 @@
-from pydantic import BaseModel
 from typing import List
+
+from pydantic import BaseModel
 
 
 class UserCreateInput(BaseModel):
@@ -17,7 +18,7 @@ class Favorite(BaseModel):
     # user_id: int
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 
 class UserListOutput(BaseModel):
@@ -26,7 +27,7 @@ class UserListOutput(BaseModel):
     favorites: List[Favorite]
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 
 class StandardOutput(BaseModel):

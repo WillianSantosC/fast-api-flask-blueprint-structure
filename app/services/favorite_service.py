@@ -1,5 +1,6 @@
+from app.models.favorites_model import Favorite
+
 from .crud_service import CrudService
-from app.database.models import Favorite
 
 
 class FavoriteService(CrudService):

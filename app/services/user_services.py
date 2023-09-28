@@ -1,5 +1,6 @@
+from app.models.user_model import User
+
 from .crud_service import CrudService
-from app.database.models import User
 
 
 class UserService(CrudService):

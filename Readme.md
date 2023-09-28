@@ -10,11 +10,11 @@
 
 # Create VM and start application commands
 
-`Load enviroment variables or create a new "VM" -` pipenv shell
+`Load environment variables or create a new "VM" -` pipenv shell
 
-`Install dependecies from Pipfile -` pipenv install
+`Install dependencies from Pipfile -` pipenv install
 
-`Add new dependecies -` pipenv insatll `dependencie name`
+`Add new dependencies -` pipenv insatll `dependence name`
 
 `Start application server -` uvicorn app.main:app --port 8080 --reload
 
@@ -23,6 +23,8 @@
 # Tutorials
 
 `Alembic configuration with FastApi -` https://www.youtube.com/watch?v=eXj1gdDLKho
+
+`SQLAlchemy 2.0 explanation -` https://www.youtube.com/watch?v=nwJYbbJfJpg
 
 `FastApi async project -` https://www.youtube.com/watch?v=1CZZAhwqyco&t=4011s
 
